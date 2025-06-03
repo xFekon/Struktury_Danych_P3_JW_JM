@@ -18,6 +18,16 @@ private:
     int height(AVLNode* node);
     int getBalance(AVLNode* node);
 
+    AVLNode* insert(AVLNode* node, int key, int value);
+    AVLNode* remove(AVLNode* node, int key);
+    AVLNode* findMin(AVLNode* node);
+    AVLNode* balance(AVLNode* node);
+
+    AVLNode* rotateLeft(AVLNode* y);
+    AVLNode* rotateRight(AVLNode* x);
+
+    void inorderPrint(AVLNode* node);
+    void deleteTree(AVLNode* node);
 
 
 public:
