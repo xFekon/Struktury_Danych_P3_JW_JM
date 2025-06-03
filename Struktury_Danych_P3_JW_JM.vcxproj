@@ -127,10 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AVL_tree.cpp" />
+    <ClCompile Include="HashTableChaining.cpp" />
+    <ClCompile Include="HashTableOpenAddressing.cpp" />
     <ClCompile Include="hash_AVL.cpp" />
     <ClCompile Include="Struktury_Danych_P3_JW_JM.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AVL_tree.h" />
+    <ClInclude Include="HashTableChaining.h" />
+    <ClInclude Include="HashTableOpenAddressing.h" />
     <ClInclude Include="hash_AVL.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
