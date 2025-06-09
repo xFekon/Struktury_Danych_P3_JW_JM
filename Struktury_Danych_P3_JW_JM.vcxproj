@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +132,7 @@
     <ClCompile Include="HashTableChaining.cpp" />
     <ClCompile Include="HashTableOpenAddressing.cpp" />
     <ClCompile Include="hash_AVL.cpp" />
+    <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Struktury_Danych_P3_JW_JM.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +140,7 @@
     <ClInclude Include="HashTableChaining.h" />
     <ClInclude Include="HashTableOpenAddressing.h" />
     <ClInclude Include="hash_AVL.h" />
+    <ClInclude Include="Menu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

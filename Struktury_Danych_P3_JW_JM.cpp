@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
+#include "Menu.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Menu menu;
+    menu.run();
+    return 0;
 }
 
 // Uruchomienie programu: Ctrl + F5 lub menu Debugowanie > Uruchom bez debugowania
