@@ -1,4 +1,5 @@
 #include "HashTableChaining.h"
+#include <iostream>
 
 HashTableChaining::HashTableChaining(std::size_t size)
 	: tableSize(size)
@@ -49,4 +50,15 @@ bool HashTableChaining::find(int key, int &value) const {
 		}
 	}
 	return false;
+}
+
+
+void HashTableChaining::display() const {
+	for (std::size_t i = 0; i < tableSize; ++i) {
+		std::cout << i << ": ";
+		for (const auto& kv : table[i]) {
+			std::cout << "(" << kv.first << ", " << kv.second << ") ";
+		}
+		std::cout << "\n";
+	}
 }

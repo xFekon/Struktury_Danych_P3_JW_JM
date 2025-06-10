@@ -1,5 +1,6 @@
 #include "HashTableOpenAddressing.h"
 #include <limits>
+#include <iostream>
 
 HashTableOpenAddressing::HashTableOpenAddressing(std::size_t size)
 	: tableSize(size)
@@ -71,6 +72,8 @@ bool HashTableOpenAddressing::remove(int key) {
 	return false;
 }
 
+
+
 std::optional<int> HashTableOpenAddressing::find(int key) const {
 	std::size_t h = hashFunction(key);
 
@@ -84,4 +87,21 @@ std::optional<int> HashTableOpenAddressing::find(int key) const {
 		}
 	}
 	return std::nullopt;
+}
+
+void HashTableOpenAddressing::display() const {
+	for (std::size_t i = 0; i < tableSize; ++i) {
+		const auto& entry = table[i];
+		std::cout << i << ": ";
+		if (entry.state == EMPTY) {
+			std::cout << "[EMPTY]";
+		}
+		else if (entry.state == DELETED) {
+			std::cout << "[DELETED]";
+		}
+		else {
+			std::cout << "(" << entry.key << ", " << entry.value << ")";
+		}
+		std::cout << "\n";
+	}
 }

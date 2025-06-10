@@ -19,6 +19,8 @@ public:
 
 	bool find(int key, int &value) const;
 
+	void display() const;
+
 private:
 	std::size_t hashFunction(int key) const;
 

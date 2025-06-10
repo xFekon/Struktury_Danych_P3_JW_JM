@@ -133,6 +133,7 @@
     <ClCompile Include="HashTableOpenAddressing.cpp" />
     <ClCompile Include="hash_AVL.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Operacje_danych.cpp" />
     <ClCompile Include="Struktury_Danych_P3_JW_JM.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="HashTableOpenAddressing.h" />
     <ClInclude Include="hash_AVL.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Operacje_danych.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

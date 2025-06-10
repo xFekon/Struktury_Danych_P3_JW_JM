@@ -17,6 +17,8 @@ public:
 
 	std::optional<int> find(int key) const;
 
+	void display() const;
+
 private:
 	enum State { EMPTY, OCCUPIED, DELETED };
 

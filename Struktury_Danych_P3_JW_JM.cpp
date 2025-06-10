@@ -3,9 +3,20 @@
 
 #include <iostream>
 #include "Menu.h"
+#include "Operacje_danych.h"
+
+
 
 int main()
 {
+    /*
+    std::vector<int> rozmiary = { 5000, 8000, 10000, 16000, 20000, 40000, 60000, 100000 };
+    for (int rozmiar : rozmiary) {
+        std::string nazwa = "dane_" + std::to_string(rozmiar) + ".txt";
+        generuj_dane(nazwa, rozmiar);
+    }
+    return 0;
+    */
     Menu menu;
     menu.run();
     return 0;
